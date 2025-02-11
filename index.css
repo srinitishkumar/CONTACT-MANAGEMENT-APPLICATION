@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card {
+    @apply transition-all duration-300 hover:shadow-lg;
+  }
+  
+  .form-input {
+    @apply h-11 px-4 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white font-medium py-2 px-4 rounded-md transition-all duration-300 font-['Roboto'];
+  }
+
+  button, .button {
+    @apply font-serif;
+  }
+
+  .search-input {
+    @apply h-10 w-full pl-10 pr-4 rounded-md border border-input bg-background text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring;
+  }
+
+  .contact-card {
+    @apply p-6 rounded-lg border border-gray-200 hover:border-primary/50 transition-all duration-300 bg-card hover:shadow-md;
+  }
+
+  .contact-info {
+    @apply flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-200;
+  }
+
+  .heading-primary {
+    @apply text-2xl font-bold text-foreground font-bree-serif;
+  }
+}
+
+.font-bree-serif {
+  font-family: 'Bree Serif', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}

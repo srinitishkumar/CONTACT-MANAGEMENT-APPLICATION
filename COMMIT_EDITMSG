@@ -1,0 +1,11 @@
+Assistant checkpoint: Configure project for Netlify deployment
+
+Assistant generated file changes:
+- vite.config.ts: Update build config for Netlify
+- netlify.toml: Add Netlify configuration
+
+---
+
+User prompt:
+
+modify it
